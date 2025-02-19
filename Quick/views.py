@@ -6,3 +6,6 @@ def home(request):
 
 def gallery(request):
     return render(request,'gallery.html')
+
+def About(request):
+    return render(request,'About.html')
