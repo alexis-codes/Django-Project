@@ -18,11 +18,16 @@
         }
         img {
             width: 280px;
-            height: 250px;
+            height: 220px;
         }
     </style>
 </head>
 <body>
+<a href="{% url 'About' %}">about</a>
+<a href="{% url 'home' %}">home</a>
+<a href="{% url 'form' %}">form</a>
+
+
 <h1>My Gallary</h1>
 <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur corporis cumque deserunt eaque eos eveniet explicabo fuga, hic illo impedit labore minima modi molestias nemo neque nihil ratione repudiandae suscipit.</span><span>Adipisci consectetur corporis exercitationem facilis magnam quos sapiente sint! Aperiam, architecto asperiores at atque blanditiis commodi corporis distinctio et iste laborum laudantium minus omnis perferendis quam quia quibusdam tempore velit?</span></p>
 <img src="{% static 'assets/img.png' %}" alt="">

@@ -8,6 +8,7 @@
     <title>Homepage</title>
     
     {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
     
     <style>
         h1{
@@ -27,6 +28,10 @@
     </style>
 </head>
 <body>
+<a href="{% url 'About' %}">about</a>
+<a href="{% url 'gallery'  %}">gallery</a>
+<a href="{% url 'form' %}">form</a>
+
 
 <h1>QuickDash App</h1>
 <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi harum ipsa molestiae nobis nulla provident quia, quod ratione repellendus? Aliquam eum illum itaque vel veritatis! Hic nobis quas repellendus unde!</span><span>Animi atque corporis culpa et nesciunt placeat ratione similique? Asperiores atque consequatur cum cumque distinctio dolore earum facilis fugit harum iusto libero nesciunt odit, omnis placeat porro quas quisquam unde!</span></p>

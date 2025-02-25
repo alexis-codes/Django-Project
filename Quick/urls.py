@@ -4,8 +4,11 @@ from Quick import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('homepage/', views.home),
-    path('gallery/', views.gallery),
-    path('About/', views.About),
+    path('', views.home,name='home'),
+    path('gallery/', views.gallery,name='gallery'),
+    path('About/', views.About,name='About'),
+    path('form/', views.form,name='form'),
+    path('product/', views.product,name='product'),
+    path('services/', views.services,name='services'),
 
 ]

@@ -5,9 +5,45 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>About Page</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/About.css' %}">
+
+
 </head>
 <body>
+<a href="{% url 'home' %}">home</a>
+<a href="{% url 'gallery' %}">gallery</a>
+<a href="{% url 'form' %}">form</a>
 
+
+<h1>Additions information about QuickDash</h1>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, autem cupiditate enim est in ipsa iusto laudantium libero molestiae molestias nisi, nostrum numquam quaerat qui quod reiciendis suscipit tenetur voluptatum.</span><span>Autem consequatur cumque cupiditate dolores explicabo, molestiae saepe! Alias dolore dolorum ex harum id impedit iste sed unde. Culpa cupiditate debitis dignissimos impedit magni nulla possimus praesentium saepe similique soluta!</span></p>
+
+<h2>Why choose us?</h2>
+<div id="main">
+    <div class="mydiv">
+        <img src="{% static 'assets/img.png'%} " alt="" class="image">
+        <h3>Couch 1</h3>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores explicabo nesciunt? Adipisci autem, commodi cupiditate, delectus dolorem dolores enim error harum ipsam non omnis reiciendis sit velit. Nihil, velit!</span><span>Animi beatae consequuntur culpa eveniet explicabo nihil quis recusandae, rem! Delectus, ducimus modi! Accusantium aliquam dolore exercitationem, harum hic in incidunt laborum molestiae, nemo nobis numquam quaerat repellendus ullam</span></p>
+        <button>More</button>
+    </div>
+    <div class="mydiv">
+        <img src="{% static 'assets/img_1.png'%} "
+             alt=""
+             class="image">
+        <h3>Couch 2</h3>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores explicabo nesciunt? Adipisci autem, commodi cupiditate, delectus dolorem dolores enim error harum ipsam non omnis reiciendis sit velit. Nihil, velit!</span><span>Animi beatae consequuntur culpa eveniet explicabo nihil quis recusandae, rem! Delectus, ducimus modi! Accusantium aliquam dolore exercitationem, harum hic in incidunt laborum molestiae, nemo nobis numquam quaerat repellendus ullam</span></p>
+        <button>More</button>
+
+    </div>
+    <div class="mydiv">
+        <img src="{% static 'assets/img_2.png'%} " alt="" class="image">
+        <h3>Couch 3</h3>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores explicabo nesciunt? Adipisci autem, commodi cupiditate, delectus dolorem dolores enim error harum ipsam non omnis reiciendis sit velit. Nihil, velit!</span><span>Animi beatae consequuntur culpa eveniet explicabo nihil quis recusandae, rem! Delectus, ducimus modi! Accusantium aliquam dolore exercitationem, harum hic in incidunt laborum molestiae, nemo nobis numquam quaerat repellendus ullam</span></p>
+        <button>More</button>
+    </div>
+</div>
 </body>
 </html>
